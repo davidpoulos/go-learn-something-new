@@ -48,7 +48,9 @@ func main() {
 	fmt.Println(cap(sliceOfFoods))
 
 	//[inclusive:exclusive]
-
+	p := &sliceOfFoods
+	RemoveByPointer(p, 2)
+	fmt.Println(p)
 }
 
 //Remove deletes an element of a slice
@@ -56,4 +58,10 @@ func Remove(s []string, i int) []string {
 	s[i] = s[len(s)-1]
 	s = s[:len(s)-1]
 	return s
+}
+
+//RemoveByPointer
+func RemoveByPointer(s *([]string), i int) {
+	(*s)[i] = (*s)[len(*s)-1]
+	*s = (*s)[:len(*s)-1]
 }
