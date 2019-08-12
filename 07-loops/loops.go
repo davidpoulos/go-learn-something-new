@@ -27,7 +27,7 @@ func main() {
 
 	// For loop
 	for i := 0; i < len(characters); i++ {
-
+		fmt.Printf("Count => %d\n", i)
 	}
 
 	// Using RANGE
@@ -44,4 +44,5 @@ func main() {
 		fmt.Printf("Key => %d City => %s\n", key, city)
 	}
 
+	fmt.Println(len(characters))
 }
