@@ -40,9 +40,9 @@ func exampleTwo() {
 	cappedMessaging <- "Ravioli"
 	cappedMessaging <- "Spongebob"
 
-	foodOne := <-cappedMessaging
-	foodTwo := <-cappedMessaging
+	// foodOne := <-cappedMessaging
+	// foodTwo := <-cappedMessaging
 
-	fmt.Println(foodOne)
-	fmt.Println(foodTwo)
+	// fmt.Println(foodOne)
+	// fmt.Println(foodTwo)
 }
