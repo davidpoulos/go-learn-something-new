@@ -39,10 +39,11 @@ func exampleTwo() {
 
 	cappedMessaging <- "Ravioli"
 	cappedMessaging <- "Spongebob"
+	//cappedMessaging <- "Three"
 
-	// foodOne := <-cappedMessaging
-	// foodTwo := <-cappedMessaging
+	foodOne := <-cappedMessaging
+	foodTwo := <-cappedMessaging
 
-	// fmt.Println(foodOne)
-	// fmt.Println(foodTwo)
+	fmt.Println(foodOne)
+	fmt.Println(foodTwo)
 }
